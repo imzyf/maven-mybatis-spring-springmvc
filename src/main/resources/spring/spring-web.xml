@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	<!-- 配置springMVC -->
+	<!-- 1:开启springMVC 注解模式 -->
+	<mvc:annotation-driven />
+
+	<!-- 2 静态资源默认servlet配置 1 加入对静态资源的处理 js gif png 2 允许使用“/”做整体映射 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 3:配置jsp 显示ViewResolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 决定视图类型，如果添加了jstl支持（即有jstl.jar），那么默认就是解析为jstl视图 -->
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<!-- 视图前缀 -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<!-- 视图后缀 -->
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- 4:扫描web相关的bean -->
+	<context:component-scan base-package="com.moma.dmv.web" />
+
+</beans>
