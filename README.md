@@ -24,18 +24,21 @@
 ## 项目结构：
 
 ### 一级结构
+```
 src
 |-main
 |-test （junit 测试相关代码）
-
+```
 ### 二级结构
+```
 src
 |-main
     |-java （Java 源文件）
     |-resources （项目配置文件）
     |-webapp （Web 相关文件）
-
+```
 ### 三级结构
+```
 src
 |-main
     |-java
@@ -62,8 +65,9 @@ src
         |-WEB-INFO
         |-favicon.ico
         |-robots.txt
-
+```
 ### 四级结构
+```
 src
 |-main
     |-webapp
@@ -79,3 +83,4 @@ src
             |-jsp （所有的 jsp 文件）
             |-jboss-web.xml （wildfly 配置文件）
             |-web.xml
+```
