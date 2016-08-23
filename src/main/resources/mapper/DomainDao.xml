@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.readhi.template.dao.DomainDao">
+	<select id="queryByNid" resultType="ads_domain">
+		<![CDATA[
+			select 
+				domain_nid,domain_name,domain_country,domain_slug,domain_createtime,
+			    domain_adsense_status,domain_includetime,domain_modifytime
+			from
+				ads_domain
+			where
+				domain_nid = #{nid}
+		]]>
+	</select>
+</mapper>

@@ -2,9 +2,8 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1" metadata-complete="true">
-
 	<servlet>
-		<servlet-name>dmv-dispatcher</servlet-name>
+		<servlet-name>web-dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<!-- 配置springMVC需要加载的配置文件 spring-dao.xml spring-service.xml spring-web.xml 
 			mybatis -> spring -> springMVC -->
@@ -14,13 +13,19 @@
 		</init-param>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>dmv-dispatcher</servlet-name>
+		<servlet-name>web-dispatcher</servlet-name>
 		<!-- 默认匹配所有的请求 -->
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-	</welcome-file-list>
-
+	<!-- 404 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/jsp/404.jsp</location>
+	</error-page>
+	<!-- 500 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/jsp/404.jsp</location>
+	</error-page>
 </web-app>

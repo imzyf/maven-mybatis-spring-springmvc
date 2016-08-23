@@ -49,7 +49,7 @@
 		<!-- 注入sqlsessionFactory -->
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 		<!-- 给出需要扫描Dao接口包 -->
-		<property name="basePackage" value="com.moma.dmv.dao" />
+		<property name="basePackage" value="com.readhi.template.dao" />
 	</bean>
 
 

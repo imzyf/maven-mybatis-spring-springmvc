@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* init */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+	tbody, tfoot, thead, tr, th, td {
+	border: 0 none;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #2f6fff;
+}
+
+html {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+/* font */
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("font/OpenSans-Bold.ttf");
+
+}
+
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("font/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("font/OpenSans-Regular.ttf");
+}
+
+
+@font-face {
+	font-family: "Raleway-Light";
+	src: url("font/Raleway-Light.ttf");
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("font/Raleway-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Raleway-Thin";
+	src: url("font/Raleway-Thin.ttf");
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("font/OpenSans-Regular.ttf");
+}

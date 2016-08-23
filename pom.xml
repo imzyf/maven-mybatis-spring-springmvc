@@ -11,9 +11,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.source>1.8</maven.compiler.source>
 		<spring.version>4.1.7.RELEASE</spring.version>
-		<struts2.version>2.2.3</struts2.version>
 	</properties>
 
 	<dependencies>
@@ -26,7 +25,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- 日志  -->
+		<!-- 日志 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -121,7 +120,7 @@
 			<artifactId>spring-tx</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- 3Spring web相关依赖 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -140,6 +139,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>webtemplate</finalName>
