@@ -13,11 +13,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta
-	content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"
-	name="viewport" />
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <c:choose>
 	<c:when test="${controllerName eq 'index'}">
 		<title>Web title</title>
