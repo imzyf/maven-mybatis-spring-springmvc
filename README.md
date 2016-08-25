@@ -3,14 +3,16 @@
 ## 新导入项目：
 - 先修改 `pom.xml` 中的 `<artifactId>webtemplate</artifactId>` `<finalName>webtemplate</finalName>`
 - 在 eclipse 中 Import->Existing Maven Projects
+- 如果要修改项目中的包名,也要修改涉及到包路径的配置文件 `spring/spring-dao.xml` `spring/spring-service.xml` `spring/spring-web.xml`
+
 
 ## 项目架构：
-- Maven + Spring + Mybatis + SpringMVC
-- junit 单元测试 写好的DAO 可以先测试下，很方便
+- Maven + Spring + Mybatis + SpringMVC + JDK 1.8
+- Junit 单元测试 写好的DAO 可以先测试下，很方便
 - slf4j 日志
 - c3p0 连接池
 - Spring 注解注入
-- DAO 层的实现全部是由 Mybatis 自动完成的，也就是说没有 DAO 层的实现代码
+- DAO 层的实现全部是由 Mybatis 自动完成的，也就是说没有 DAO 层的实现代码；mapper 的名字要是 DAO 的接口名
 - 一种类型的 url 一个 controller
 
 ## .gitignore
